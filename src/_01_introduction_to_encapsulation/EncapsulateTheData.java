@@ -18,7 +18,7 @@ package _01_introduction_to_encapsulation;
 
 public class EncapsulateTheData {
 	//1. Encapsulate the member variables.
-	//   Add restrictions to the setters according to the comment.
+	//   Add restrictions to the setters according to the comment.		
 	
 	//2. Create a new JUnit Test case and write tests to verify that 
 	//   the member variables' getters and setters are working
@@ -30,5 +30,35 @@ public class EncapsulateTheData {
 	
 	public static void main(String[] args) {
 		
+	}
+	public int getItemsReceived() {
+		return itemsReceived;
+	}
+	public void setItemsReceived(int itemsReceived) {
+		this.itemsReceived = itemsReceived;
+	}
+
+	public float getDegreesTurned() {
+		return degreesTurned;
+	}
+
+	public void setDegreesTurned(float degreesTurned) {
+		this.degreesTurned = degreesTurned;
+	}
+
+	public String getNomenclature() {
+		return nomenclature;
+	}
+
+	public void setNomenclature(String nomenclature) {
+		this.nomenclature = nomenclature;
+	}
+
+	public Object getMemberObj() {
+		return memberObj;
+	}
+
+	public void setMemberObj(Object memberObj) {
+		this.memberObj = memberObj;
 	}
 }
