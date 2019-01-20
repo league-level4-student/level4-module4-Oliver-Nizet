@@ -29,7 +29,7 @@ public class EncapsulateTheData {
 	private Object memberObj; //can be any object type except String. Strings get turned into objects.
 	
 	public static void main(String[] args) {
-		
+	
 	}
 	
 	public int getItemsReceived() {
@@ -76,7 +76,9 @@ public class EncapsulateTheData {
 	}
 
 	public void setMemberObj(Object memberObj) {
-		//todo
+		if(memberObj instanceof String){
+			memberObj = new Object();
+		}
 		this.memberObj = memberObj;
 	}
 }
